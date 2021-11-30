@@ -37,7 +37,11 @@ Route::get('/index', 'BlogController@index');
 Route::get('/more/{id}', 'BlogController@more');
 
 //AHP
-Route::get('/rekomendasi', 'AHPController@index');
+Route::get('/rekomendasi', 'AHPController@create');
+Route::post('/perhitungan/store','AHPController@store');
+Route::get('/perhitungan/show/{id}/','AHPController@lihat')->name('perhitungan.show');
+Route::get('/perhitungan/saved','AHPController@saved')->name('perhitungan.saved');
+Route::post('/perhitungan/ahp/hitung','AHPController@hitung');
 
 Auth::routes();
 
