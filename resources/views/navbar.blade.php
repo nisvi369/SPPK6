@@ -9,6 +9,9 @@
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
+  <!-- Font Awesome -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
   <!-- Favicons -->
   <link href="{{asset('Delicious/assets/img/favicon.png')}}" rel="icon">
   <link href="{{asset('Delicious/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
@@ -96,6 +99,10 @@
   <!-- Template Main JS File -->
   <script src="{{asset('Delicious/assets/js/main.js')}}"></script>
 
+  <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
+  <!-- JQuery -->
+  <script src="{{asset('js/ahp.js')}}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
   @yield('header')
   @yield('content')
   @yield('footer')

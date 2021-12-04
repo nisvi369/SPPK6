@@ -32,12 +32,12 @@
                 </h5>
                 <div class="card-body px-lg-5 pt-2" id="project-body">
                         <div class="md-form">
-                            <label for="#project-name">Judul perhitungan</label>     
+                            <label for="#project-name">Judul</label>     
                             <input id="project-name" type="text" name="name" class="form-control" value="" required>
                             
                         </div>
                         <div class="md-form">
-                            <label for="#project-description">Deskripsi perhitungan</label>     
+                            <label for="#project-description">Deskripsi</label>     
                             <input id="project-description" name="description" class="form-control" type="text" required/>
                         </div>
                 </div>
@@ -55,7 +55,7 @@
                 <div class="md-form">
                     <div class="row">
                         <div class="col-10">
-                            <input type="text" name="criterias[]" placeholder="Masukan criteria" class="criteria form-control" value="" required>
+                            <input type="text" name="criterias[]" placeholder="Masukan Kriteria" class="criteria form-control" value="" required>
                             <!-- <span class="d-block">
                                 <select name="types[]" class="browser-default criteria-type custom-select small" required>
                                     <option value="0" selected>Qualitative</option>
@@ -69,17 +69,17 @@
                                 <i class="fa fa-plus"></i>
                             </button>
                         </span>
-                        </div>
                     </div>
+                </div>
                 <div id="criteria-form-container"></div>     
             </div>
         </div>
-        </div>
+    </div>
 
         <div class="col-md-6 mt-2">
             <div class="card">
                 <h5 class="card-header default-color white-text d-flex justify-content-between align-items-center py-4">
-                    <strong>2. Candidates / Alternatives</strong>
+                    <strong>2. Alternative</strong>
                     <div>
                         <button type="button" class="btn btn-outline-white btn-sm" data-toggle="collapse" data-target="#alternatives-matrix-body" aria-expanded="true" aria-controls="collapseOne">
                             <i class="fa fa-eye"></i>
@@ -109,7 +109,7 @@
                 <h5 class="card-header primary-color white-text d-flex justify-content-between align-items-center py-4">
                     <strong>3. Relative Interest Matrix</strong>
                     <div>
-                            <button type="button" class="btn btn-outline-warning btn-sm pull-right" onclick="generateInterestRelativeMatrix();">Generate Matrix</button> 
+                            <button type="button" class="btn btn-info btn-sm pull-right" onclick="generateInterestRelativeMatrix();">Generate Matrix</button> 
                         <button type="button" class="btn btn-outline-white btn-sm" data-toggle="collapse" data-target="#interest-matrix-body" aria-expanded="true" aria-controls="collapseOne">
                             <i class="fa fa-eye"></i>
                         </button>
@@ -142,7 +142,7 @@
                             <button type="button" class="btn btn-outline-white btn-sm" data-toggle="collapse" data-target="#pairwise-body" aria-expanded="true" aria-controls="collapseOne">
                                 <i class="fa fa-eye"></i>
                             </button>
-                            <button type="button" class="btn btn-outline-white btn-sm pull-right" onclick="generatePairWiseMatrix();">Generate Matrix</button> 
+                            <button type="button" class="btn btn-info btn-sm pull-right" onclick="generatePairWiseMatrix();">Generate Matrix</button> 
                             
                         </div>
                     </h5>
@@ -162,7 +162,7 @@
                             <button type="button" class="btn btn-outline-white btn-sm" data-toggle="collapse" data-target="#result-body" aria-expanded="true" aria-controls="collapseOne">
                                 <i class="fa fa-eye"></i>
                             </button>
-                            <button class="btn btn-outline-white btn-sm pull-right" type="submit">Simpan</button> 
+                            <button class="btn btn-success btn-sm pull-right" type="submit">Simpan</button> 
                             
                         </div>
                     </h5>
@@ -180,26 +180,26 @@
 
 @push('script-bawah')
 <script src="{{asset('js/ahp.js')}}"></script>
-    <script>
-    // Material Select Initialization
-    $(document).ready(function() {
-        $('#store-perhitungan').on('submit',function(ev){
-            ev.preventDefault();
-            var url = $(this).attr('action');
-            var formData = new FormData(this);
-            $.ajax({
-                type: "POST",
-                url: url,
-                data: formData,
-                enctype: 'multipart/form-data',
-                dataType: "html",
-                processData: false,
-                contentType: false,
-                success: function (response) {
-                    $("#result-body").html(response);
-                }
-            });
+<script>
+// Material Select Initialization
+$(document).ready(function() {
+    $('#store-perhitungan').on('submit',function(ev){
+        ev.preventDefault();
+        var url = $(this).attr('action');
+        var formData = new FormData(this);
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: formData,
+            enctype: 'multipart/form-data',
+            dataType: "html",
+            processData: false,
+            contentType: false,
+            success: function (response) {
+                $("#result-body").html(response);
+            }
         });
     });
-    </script>
+});
+</script>
 @endpush
