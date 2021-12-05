@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 //Landing
 Route::get('/', 'blogController@index');
 Route::get('/form', 'blogController@form');
@@ -36,12 +37,12 @@ Route::post('/postKonten', 'BlogController@postKonten');
 Route::get('/index', 'BlogController@index');
 Route::get('/more/{id}', 'BlogController@more');
 
-//AHP
-Route::get('/rekomendasi', 'AHPController@create');
-Route::post('/perhitungan/store','AHPController@store');
-Route::get('/perhitungan/show/{id}/','AHPController@lihat')->name('perhitungan.show');
-Route::get('/perhitungan/saved','AHPController@saved')->name('perhitungan.saved');
-Route::post('/perhitungan/ahp/hitung','AHPController@hitung');
+// AHP
+Route::get('/perhitungan/buat','PerhitunganController@create')->name('perhitungan.buat');
+Route::post('/perhitungan/store','PerhitunganController@store');
+Route::get('/perhitungan/show/{id}/','PerhitunganController@lihat')->name('perhitungan.show');
+Route::get('/perhitungan/saved','PerhitunganController@saved')->name('perhitungan.saved');
+Route::post('/perhitungan/ahp/hitung','PerhitunganController@hitung');
 
 Auth::routes();
 

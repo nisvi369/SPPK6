@@ -15,7 +15,7 @@
               <div>
                 <a href="/form" class="btn-menu animate__animated animate__fadeInUp scrollto">Write Story</a>
                 <a href="/form-event" class="btn-book animate__animated animate__fadeInUp scrollto">Pin Event</a>
-                <a href="/rekomendasi" class="btn-book animate__animated animate__fadeInUp scrollto">Rekomendasi</a>
+                <a href="/perhitungan/buat" class="btn-book animate__animated animate__fadeInUp scrollto">Rekomendasi</a>
               @endif
               </div>
             </div>
@@ -30,7 +30,7 @@
               <div>
                 <a href="/form" class="btn-menu animate__animated animate__fadeInUp scrollto">Write Story</a>
                 <a href="/form-event" class="btn-book animate__animated animate__fadeInUp scrollto">Pin Event</a>
-                <a href="/rekomendasi" class="btn-book animate__animated animate__fadeInUp scrollto">Rekomendasi</a>
+                <a href="/perhitungan/buat" class="btn-book animate__animated animate__fadeInUp scrollto">Rekomendasi</a>
               </div>
             </div>
           </div>
@@ -45,7 +45,7 @@
               <div>
                 <a href="/form" class="btn-menu animate__animated animate__fadeInUp scrollto">Write Story</a>
                 <a href="/form-event" class="btn-book animate__animated animate__fadeInUp scrollto">Pin Event</a>
-                <a href="/rekomendasi" class="btn-book animate__animated animate__fadeInUp scrollto">Rekomendasi</a>
+                <a href="/perhitungan/buat" class="btn-book animate__animated animate__fadeInUp scrollto">Rekomendasi</a>
               </div>
             </div>
           </div>
