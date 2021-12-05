@@ -23,6 +23,7 @@
 </style>
 
 <form action="/perhitungan/store" method="POST" id="store-perhitungan" enctype="multipart/form-data">
+@csrf
 <div class="container mb-5" style="margin-top:5em !important;">
     <div class="row">
         <div class="col-md-12">
@@ -110,7 +111,7 @@
                     <strong>3. Relative Interest Matrix</strong>
                     <div>
                             <button type="button" class="btn btn-info btn-sm pull-right" onclick="generateInterestRelativeMatrix();">Generate Matrix</button> 
-                        <button type="button" class="btn btn-outline-white btn-sm" data-toggle="collapse" data-target="#interest-matrix-body" aria-expanded="true" aria-controls="collapseOne">
+                            <button type="button" class="btn btn-outline-white btn-sm" data-toggle="collapse" data-target="#interest-matrix-body" aria-expanded="true" aria-controls="collapseOne">
                             <i class="fa fa-eye"></i>
                         </button>
                         

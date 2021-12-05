@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Bardiz12\AHPDss\AHP;
 use Illuminate\Http\Request;
 
 class AHPController extends Controller
@@ -25,13 +26,13 @@ class AHPController extends Controller
             unset($input['name']);
             unset($input['description']);
             $ahp = new AHP();
-            foreach ($input['types'] as $key => $value) {
-                if($value == 0){
+            // foreach ($input['types'] as $key => $value) {
+                // if($value == 0){
                     $ahp->addQualitativeCriteria($input['criterias'][$key]);
-                }else{
-                    $ahp->addQuantitativeCriteria($input['criterias'][$key]);
-                }
-            }
+                // }else{
+                    // $ahp->addQuantitativeCriteria($input['criterias'][$key]);
+                // }
+            // /
             $ahp->setCandidates($input['alternatives']);
 
             //relative interest matrix
@@ -70,6 +71,7 @@ class AHPController extends Controller
                 'data'=>json_encode($request->all())
             ]);
             echo "<a href=".route('perhitungan.show',[$perhitungan->id]).">CLICK HERE TO SEE THE RESULT</a>";
+        
         }catch(\ErrorException $e){
             echo "ERROR : ".$e->getMessage();
         }

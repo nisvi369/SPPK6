@@ -145,9 +145,9 @@ function addNewCriteriaInput(){
             var i =0;
             criterias.forEach(element => {
                 if(types[i] == 0){
-                    printPairWiseMatrix(element,i);
-                }else{
                     printQuantitativeMatrix(element,i);
+                }else{
+                    printPairWiseMatrix(element,i);
                 }
                 i++;
             });
