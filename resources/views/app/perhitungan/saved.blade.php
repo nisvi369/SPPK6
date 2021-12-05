@@ -1,4 +1,4 @@
-@extends('app.layouts.app')
+@extends('navbar')
 @section('title','Home')
 
 @section('search_term',$search)

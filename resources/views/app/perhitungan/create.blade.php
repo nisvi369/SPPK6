@@ -1,8 +1,22 @@
 @extends('navbar')
 @section('title','Buat Perhitungan baru')
-
-
 @section('content')
+<style type="text/css">
+    body{
+        background-color:#1c3a39bd;
+    }
+    form{
+        margin-top:150px;
+    }
+    #konten{
+        background-color:white;
+        color: black;
+    }
+    #form{
+        margin-bottom:100px;
+    }
+</style>
+
 <form action="/perhitungan/store" method="POST" id="store-perhitungan" enctype="multipart/form-data">
 <div class="container mb-5" style="margin-top:5em !important;">
     <div class="row">
@@ -12,15 +26,15 @@
                     <strong>Buat Perhitungan Baru</strong>                 
                 </h5>
                 <div class="card-body px-lg-5 pt-2" id="project-body">
-                        <div class="md-form">     
-                            <input id="project-name" type="text" name="name" class="form-control" value="" required>
-                            <label for="#project-name">Judul perhitungan</label>
-                            
-                        </div>
-                        <div class="md-form">     
-                            <input id="project-description" name="description" class="form-control" type="text" required/>
-                            <label for="#project-description">Deskripsi perhitungan</label>
-                        </div>
+                    <div class="md-form">     
+                        <label for="#project-name">Judul perhitungan</label>
+                        <input id="project-name" type="text" name="name" class="form-control" value="" required>
+                        
+                    </div>
+                    <div class="md-form">     
+                        <label for="#project-description">Deskripsi perhitungan</label>
+                        <input id="project-description" name="description" class="form-control" type="text" required/>
+                    </div>
                 </div>
             </div>
         </div>
