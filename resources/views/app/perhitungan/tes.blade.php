@@ -23,7 +23,7 @@
             </table>
     </div>
     <div class="jumbotron mt-5 collapse" id="coretan-body">
-        <h3>Coretan</h3>
+        <h3>Detail Perhitungan</h3>
         <pre>
             {{$debug}}
         </pre>

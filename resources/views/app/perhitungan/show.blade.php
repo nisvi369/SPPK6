@@ -43,7 +43,7 @@
         <div class="card">
             <h5 class="card-header info-color white-text d-flex justify-content-between align-items-center py-4">
                 
-                        <strong>1. Criteria</strong>
+                        <strong>1. Kriteria</strong>
                                 <button type="button" class="btn btn-outline-white btn-sm" data-toggle="collapse" data-target="#criteria-body" aria-expanded="true" aria-controls="collapseOne">
                                     <i class="fa fa-eye"></i>
                                 </button>
@@ -91,7 +91,7 @@
         <div class="col-md-6 mt-2">
             <div class="card">
                 <h5 class="card-header default-color white-text d-flex justify-content-between align-items-center py-4">
-                    <strong>2. Candidates / Alternatives</strong>
+                    <strong>2. Alternatif</strong>
                     <div>
                         
                         <button type="button" class="btn btn-outline-white btn-sm" data-toggle="collapse" data-target="#alternatives-matrix-body" aria-expanded="true" aria-controls="collapseOne">
@@ -140,9 +140,9 @@
         <div class="col-md-12 mt-2">
             <div class="card">
                 <h5 class="card-header primary-color white-text d-flex justify-content-between align-items-center py-4">
-                    <strong>3. Relative Interest Matrix</strong>
+                    <strong>3. Matriks Perbandingan Kriteria Berpasangan</strong>
                     <div>
-                            <button type="button" class="btn btn-outline-warning btn-sm pull-right" onclick="generateInterestRelativeMatrix();">Generate Matrix</button> 
+                            <button type="button" class="btn btn-info btn-sm pull-right" onclick="generateInterestRelativeMatrix();">Generate Matrix</button> 
                         <button type="button" class="btn btn-outline-white btn-sm" data-toggle="collapse" data-target="#interest-matrix-body" aria-expanded="true" aria-controls="collapseOne">
                             <i class="fa fa-eye"></i>
                         </button>
@@ -169,13 +169,13 @@
         <div class="col-md-12 mt-2">
                 <div class="card">
                     <h5 class="card-header purple-gradient white-text d-flex justify-content-between align-items-center py-4">
-                        <strong>4. Matrix PairWise</strong>
+                        <strong>4. Matriks Perbandingan Alternatif Berpasangan berdasarkan Kriteria</strong>
                         <div>
                             
                             <button type="button" class="btn btn-outline-white btn-sm" data-toggle="collapse" data-target="#pairwise-body" aria-expanded="true" aria-controls="collapseOne">
                                 <i class="fa fa-eye"></i>
                             </button>
-                            <button type="button" class="btn btn-outline-white btn-sm pull-right" onclick="generatePairWiseMatrix();">Generate Matrix</button> 
+                            <button type="button" class="btn btn-info btn-sm pull-right" onclick="generatePairWiseMatrix();">Generate Matrix</button> 
                             
                         </div>
                     </h5>
@@ -189,16 +189,16 @@
         <div class="col-md-12 mt-2">
                 <div class="card">
                     <h5 class="card-header peach-gradient white-text d-flex justify-content-between align-items-center py-4">
-                        <strong>5. Result</strong>
+                        <strong>5. Hasil</strong>
                         <div>
                             
                             <button type="button" class="btn btn-outline-white btn-sm" data-toggle="collapse" data-target="#result-body" aria-expanded="true" aria-controls="collapseOne">
                                 <i class="fa fa-eye"></i>
                             </button>
-                            <button type="button" class="btn btn-outline-white btn-sm" data-toggle="collapse" data-target="#coretan-body" aria-expanded="true" aria-controls="collapseOne">
+                            <button type="button" class="btn btn-warning btn-sm" data-toggle="collapse" data-target="#coretan-body" aria-expanded="true" aria-controls="collapseOne">
                                     <i class="fa fa-calculator"></i>
                                 </button>
-                            <button class="btn btn-outline-white btn-sm pull-right" type="submit">GET RESULT</button> 
+                            <button class="btn btn-success btn-sm pull-right" type="submit">Get Result</button> 
                             
                         </div>
                     </h5>

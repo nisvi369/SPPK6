@@ -64,8 +64,8 @@
       <nav class="nav-menu d-none d-lg-block">
      
         <ul>
-          <li><a href="{{route('perhitungan.saved')}}">History Perhitungan</a></li>
-          <li class="book-a-table text-center"><a href="{{route('perhitungan.buat')}}">Buat Perhitungan</a></li>
+          <li><a href="{{route('perhitungan.saved')}}">Riwayat Rekomendasi</a></li>
+          <li class="book-a-table text-center"><a href="{{route('perhitungan.buat')}}">Rekomendasi</a></li>
           <!-- <li><a href="#">My Blog</a></li> -->
           <!-- <li><a href="/profile">My Profile</a></li> -->
           <li><a href="/logout">Logout</a></li>

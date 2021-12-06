@@ -41,19 +41,16 @@
         <div class="col-md-6 mt-2">
         <div class="card">
             <h5 class="card-header info-color white-text d-flex justify-content-between align-items-center py-4">
-                
-                        <strong>1. Criteria</strong>
-                                <button type="button" class="btn btn-outline-white btn-sm" data-toggle="collapse" data-target="#criteria-body" aria-expanded="true" aria-controls="collapseOne">
-                                    <i class="fa fa-eye"></i>
-                                </button>
-           
-                
+                <strong>1. Kriteria</strong>
+                <button type="button" class="btn btn-outline-white btn-sm" data-toggle="collapse" data-target="#criteria-body" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fa fa-eye"></i>
+                </button>    
             </h5>
             <div class="card-body px-lg-5 pt-0 collapse show" id="criteria-body">
                 <div class="md-form">
                     <div class="row">
                         <div class="col-10">
-                            <input type="text" name="criterias[]" placeholder="Masukan criteria" class="criteria form-control" value="" required>
+                            <input type="text" name="criterias[]" placeholder="Masukan Kriteria" class="criteria form-control" value="" required>
                             <span class="d-block">
                                 <select name="types[]" class="browser-default criteria-type custom-select small" required hidden="">
                                     <option value="0" selected>Qualitative</option>
@@ -84,7 +81,7 @@
         <div class="col-md-6 mt-2">
             <div class="card">
                 <h5 class="card-header default-color white-text d-flex justify-content-between align-items-center py-4">
-                    <strong>2. Candidates / Alternatives</strong>
+                    <strong>2. Alternatif</strong>
                     <div>
                         
                         <button type="button" class="btn btn-outline-white btn-sm" data-toggle="collapse" data-target="#alternatives-matrix-body" aria-expanded="true" aria-controls="collapseOne">
@@ -99,7 +96,7 @@
                         <div class="row">
                             
                                 <div class="col-10">
-                                        <input type="text" name="alternatives[]" placeholder="Masukan Alternative" class="alternative-input form-control" required>
+                                        <input type="text" name="alternatives[]" placeholder="Masukan Alternatif" class="alternative-input form-control" required>
                                         
                                         
                                     </div>
@@ -125,9 +122,9 @@
         <div class="col-md-12 mt-2">
             <div class="card">
                 <h5 class="card-header primary-color white-text d-flex justify-content-between align-items-center py-4">
-                    <strong>3. Relative Interest Matrix</strong>
+                    <strong>3. Matriks Perbandingan Kriteria Berpasangan</strong>
                     <div>
-                            <button type="button" class="btn btn-outline-warning btn-sm pull-right" onclick="generateInterestRelativeMatrix();">Generate Matrix</button> 
+                            <button type="button" class="btn btn-info btn-sm pull-right" onclick="generateInterestRelativeMatrix();">Generate Matrix</button> 
                         <button type="button" class="btn btn-outline-white btn-sm" data-toggle="collapse" data-target="#interest-matrix-body" aria-expanded="true" aria-controls="collapseOne">
                             <i class="fa fa-eye"></i>
                         </button>
@@ -154,13 +151,13 @@
         <div class="col-md-12 mt-2">
                 <div class="card">
                     <h5 class="card-header purple-gradient white-text d-flex justify-content-between align-items-center py-4">
-                        <strong>4. Matrix PairWise</strong>
+                        <strong>4. Matriks Perbandingan Alternatif Berpasangan berdasarkan Kriteria</strong>
                         <div>
                             
                             <button type="button" class="btn btn-outline-white btn-sm" data-toggle="collapse" data-target="#pairwise-body" aria-expanded="true" aria-controls="collapseOne">
                                 <i class="fa fa-eye"></i>
                             </button>
-                            <button type="button" class="btn btn-outline-white btn-sm pull-right" onclick="generatePairWiseMatrix();">Generate Matrix</button> 
+                            <button type="button" class="btn btn-info btn-sm pull-right" onclick="generatePairWiseMatrix();">Generate Matrix</button> 
                             
                         </div>
                     </h5>
@@ -180,7 +177,7 @@
                             <button type="button" class="btn btn-outline-white btn-sm" data-toggle="collapse" data-target="#result-body" aria-expanded="true" aria-controls="collapseOne">
                                 <i class="fa fa-eye"></i>
                             </button>
-                            <button class="btn btn-outline-white btn-sm pull-right" type="submit">Simpan</button> 
+                            <button class="btn btn-success btn-sm pull-right" type="submit">Simpan</button> 
                             
                         </div>
                     </h5>
