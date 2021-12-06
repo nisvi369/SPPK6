@@ -55,9 +55,9 @@
                         <div class="col-10">
                             <input type="text" name="criterias[]" placeholder="Masukan criteria" class="criteria form-control" value="" required>
                             <span class="d-block">
-                                <select name="types[]" class="browser-default criteria-type custom-select small" required>
+                                <select name="types[]" class="browser-default criteria-type custom-select small" required hidden="">
                                     <option value="0" selected>Qualitative</option>
-                                    <option value="1">Quantitative</option>
+                                    <option value="1" hidden="">Quantitative</option>
                                 </select>
                             </span>
                             

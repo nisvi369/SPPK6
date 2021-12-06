@@ -8,7 +8,7 @@ var criterias = [];
                             <div class="col-10">
                                 <input type="text" name="criterias[]" placeholder="Masukan criteria" class="form-control criteria" required >
                                 <span class="d-block">
-                                    <select name="types[]" class="browser-default custom-select criteria-type small" required>
+                                    <select name="types[]" class="browser-default custom-select criteria-type small" hidden="">
                                         <option value="0" selected>Qualitative</option>
                                         <option value="1">Quantitative</option>
                                     </select>

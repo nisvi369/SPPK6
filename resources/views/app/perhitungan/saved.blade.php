@@ -1,13 +1,34 @@
 @extends('navbar')
-@section('title','Home')
+@section('title','Buat Perhitungan baru')
 
 @section('search_term',$search)
 
 @section('content')
-<div class="container mb-5" style="margin-top:5rem;">
+<style type="text/css">
+    body{
+        background-color:#1c3a39bd;
+    }
+    form{
+        margin-top:150px;
+    }
+    #konten{
+        background-color:white;
+        color: black;
+    }
+    #form{
+        margin-bottom:100px;
+    }
+</style>
+
+<div class="container mb-5" style="margin-top:0rem;">
         <div class="row">
             <div class="col-md-12">
-                <div class="card">
+                <form class="form-inline" action="{{route('perhitungan.saved')}}">
+                    <div class="md-form my-0">
+                        <input class="form-control mr-sm-2" type="text" name="s" placeholder="Cari Perhitungan" aria-label="Search" value="@yield("search_term")">
+                    </div>
+                </form>
+                <div class="card mt-2">
                     <div class="card-header">Daftar Perhitungan yang disimpan</div>
                     <div class="card-body">
                         @if($search)
